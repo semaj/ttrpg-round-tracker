@@ -4,9 +4,10 @@ The goal here is to simplify round tracking, effects like afflictions or spells,
 and enemy HP/afflictions.
 
 The critical command is `step`, which steps forward 1 round by default. But you
-can also specify a duration. `10r` is 10 rounds, but other units include `s` for
-seconds, `m` for minutes, `d` for days, `y` for years. It will automatically
-convert the duration to rounds and step forward that number of rounds.
+can also specify a duration with `step <duration>`. For duration, `10r` is 10
+rounds, but other units include `s` for seconds (e.g., `100s`), `m` for minutes, `d` for days,
+`y` for years. It will automatically convert the duration to rounds and step
+forward that number of rounds.
 
 Critically, it will automatically notify you when effects end. To add an effect,
 type `in <duration> <effect>`, where `<effect>` is something like "Slick is no longer
